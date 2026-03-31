@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #efefef;
+  color: #5f6773;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 270px;
+  background: #5a7427;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-box {
+  margin-bottom: 40px;
+}
+
+.profile-img {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 8px solid rgba(255, 255, 255, 0.22);
+  display: block;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  text-align: center;
+}
+
+.sidebar-nav a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #d4ddc0;
+  transition: color 0.25s ease;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
+  color: #ffffff;
+}
+
+/* MAIN CONTENT */
+.content {
+  margin-left: 270px;
+  width: calc(100% - 270px);
+}
+
+.section {
+  min-height: 100vh;
+  padding: 90px 70px;
+  border-bottom: 1px solid #dddddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* TITLES */
+.main-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 64px;
+  line-height: 1;
+  color: #313844;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+
+.main-title span {
+  color: #5a7427;
+}
+
+.sub-text {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #798494;
+  margin-bottom: 38px;
+}
+
+.sub-text a {
+  color: #5a7427;
+}
+
+.section-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 54px;
+  line-height: 1;
+  color: #313844;
+  margin-bottom: 48px;
+}
+
+/* ABOUT */
+.about-text {
+  max-width: 1000px;
+}
+
+.about-text p {
+  font-size: 17px;
+  color: #6b7280;
+  margin-bottom: 24px;
+  line-height: 1.85;
+}
+
+.social-links {
+  display: flex;
+  gap: 18px;
+  margin: 18px 0 28px;
+}
+
+.social-links a {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #4a5563;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.social-links a:hover {
+  background: #5a7427;
+  transform: translateY(-2px);
+}
+
+.resume-btn {
+  display: inline-block;
+  background: #5a7427;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  padding: 14px 42px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+/* EXPERIENCE / EDUCATION */
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 48px;
+}
+
+.item-left {
+  flex: 1;
+  max-width: 900px;
+}
+
+.item-right {
+  min-width: 220px;
+  text-align: right;
+  color: #7d7a33;
+  font-size: 18px;
+  white-space: nowrap;
+  padding-top: 8px;
+}
+
+.item-left h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  color: #313844;
+  margin-bottom: 4px;
+}
+
+.item-left h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #5a7427;
+  margin-bottom: 16px;
+}
+
+.item-left p,
+.item-left li {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.8;
+}
+
+.item-left ul {
+  padding-left: 22px;
+}
+
+/* SKILLS */
+.skill-block {
+  margin-bottom: 34px;
+}
+
+.skill-block h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  color: #5a7427;
+  margin-bottom: 18px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-tags span {
+  background: #fafafa;
+  color: #505967;
+  border: 1px solid #dddddd;
+  border-radius: 24px;
+  padding: 10px 16px;
+  font-size: 14px;
+}
+
+/* PROJECTS */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.project-card {
+  background: #f7f7f7;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.project-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-card h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 26px;
+  color: #5a7427;
+  padding: 18px 18px 8px;
+  line-height: 1.2;
+}
+
+.project-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #6b7280;
+  padding: 0 18px 20px;
+  flex-grow: 1;
+}
+
+.project-btn {
+  display: block;
+  margin: 0 18px 18px;
+  text-align: center;
+  background: #5a7427;
+  color: #fff;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+/* AWARDS */
+.award-list {
+  list-style: none;
+  max-width: 1000px;
+}
+
+.award-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.8;
+}
+
+.award-list li::before {
+  content: "🏆";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* CONTACT */
+.center-title {
+  text-align: center;
+}
+
+.contact-text {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #6b7280;
+}
+
+.contact-form {
+  max-width: 820px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #93a55d;
+  background: transparent;
+  padding: 14px 8px;
+  font-size: 16px;
+  color: #374151;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 220px;
+  padding: 16px;
+  border: none;
+  background: #5a7427;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .main-title {
+    font-size: 52px;
+  }
+
+  .section-title {
+    font-size: 44px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 28px 18px;
+  }
+
+  .profile-img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .sidebar-nav a {
+    font-size: 14px;
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .section {
+    min-height: auto;
+    padding: 56px 28px;
+  }
+
+  .main-title {
+    font-size: 40px;
+  }
+
+  .sub-text {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 34px;
+    margin-bottom: 32px;
+  }
+
+  .item-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .item-right {
+    text-align: left;
+    min-width: auto;
+    padding-top: 0;
+  }
+
+  .item-left h3 {
+    font-size: 24px;
+  }
+
+  .item-left h4 {
+    font-size: 18px;
+  }
+
+  .about-text p,
+  .item-left p,
+  .item-left li,
+  .contact-text,
+  .award-list li {
+    font-size: 15px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+}
