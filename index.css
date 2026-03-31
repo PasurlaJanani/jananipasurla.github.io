@@ -30,7 +30,7 @@ a {
 /* SIDEBAR */
 .sidebar {
   width: 270px;
-  background: #5a7427;
+  background: #1a4f7a;
   position: fixed;
   top: 0;
   left: 0;
@@ -66,7 +66,7 @@ a {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 16px;
-  color: #d4ddc0;
+  color: #b0c8df;
   transition: color 0.25s ease;
 }
 
@@ -101,7 +101,7 @@ a {
 }
 
 .main-title span {
-  color: #5a7427;
+  color: #1a4f7a;
 }
 
 .sub-text {
@@ -113,7 +113,7 @@ a {
 }
 
 .sub-text a {
-  color: #5a7427;
+  color: #1a4f7a;
 }
 
 .section-title {
@@ -156,13 +156,13 @@ a {
 }
 
 .social-links a:hover {
-  background: #5a7427;
+  background: #1a4f7a;
   transform: translateY(-2px);
 }
 
 .resume-btn {
   display: inline-block;
-  background: #5a7427;
+  background: #1a4f7a;
   color: #fff;
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
@@ -187,7 +187,7 @@ a {
 .item-right {
   min-width: 220px;
   text-align: right;
-  color: #7d7a33;
+  color: #1a4f7a;
   font-size: 18px;
   white-space: nowrap;
   padding-top: 8px;
@@ -204,8 +204,15 @@ a {
   font-family: 'Oswald', sans-serif;
   font-size: 22px;
   font-weight: 500;
-  color: #5a7427;
-  margin-bottom: 16px;
+  color: #1a4f7a;
+  margin-bottom: 6px;
+}
+
+.role-meta {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-bottom: 14px !important;
+  font-style: italic;
 }
 
 .item-left p,
@@ -227,7 +234,7 @@ a {
 .skill-block h4 {
   font-family: 'Oswald', sans-serif;
   font-size: 24px;
-  color: #5a7427;
+  color: #1a4f7a;
   margin-bottom: 18px;
 }
 
@@ -249,7 +256,7 @@ a {
 /* PROJECTS */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 26px;
 }
 
@@ -273,7 +280,7 @@ a {
 .project-card h3 {
   font-family: 'Oswald', sans-serif;
   font-size: 26px;
-  color: #5a7427;
+  color: #1a4f7a;
   padding: 18px 18px 8px;
   line-height: 1.2;
 }
@@ -290,7 +297,7 @@ a {
   display: block;
   margin: 0 18px 18px;
   text-align: center;
-  background: #5a7427;
+  background: #1a4f7a;
   color: #fff;
   padding: 14px;
   font-size: 18px;
@@ -348,7 +355,7 @@ a {
 .contact-form textarea {
   width: 100%;
   border: none;
-  border-bottom: 1px solid #93a55d;
+  border-bottom: 1px solid #5b8db8;
   background: transparent;
   padding: 14px 8px;
   font-size: 16px;
@@ -366,7 +373,7 @@ a {
   width: 220px;
   padding: 16px;
   border: none;
-  background: #5a7427;
+  background: #1a4f7a;
   color: #fff;
   font-family: 'Oswald', sans-serif;
   font-size: 22px;
